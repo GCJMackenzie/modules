@@ -15,7 +15,7 @@ process GATK4_GENOMICSDBIMPORT {
     if (workflow.containerEngine == 'singularity' && !params.singularity_pull_docker_container) {
         container "https://depot.galaxyproject.org/singularity/gatk4:4.2.0.0--0"
     } else {
-        container "https://depot.galaxyproject.org/singularity/gatk4:4.2.0.0--0"
+        container "quay.io/biocontainers/gatk4:4.2.0.0--0"
     }
 
     input:
