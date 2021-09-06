@@ -245,7 +245,7 @@ deeptools/plotprofile:
 delly/call:
   - modules/delly/call/**
   - tests/modules/delly/call/**
-  
+
 dragonflye:
   - modules/dragonflye/**
   - tests/modules/dragonflye/**
@@ -321,6 +321,10 @@ gatk4/createsequencedictionary:
 gatk4/fastqtosam:
   - modules/gatk4/fastqtosam/**
   - tests/modules/gatk4/fastqtosam/**
+
+gatk4/genomicsdbimport:
+  - modules/gatk4/genomicsdbimport/**
+  - tests/modules/gatk4/genomicsdbimport/**
 
 gatk4/haplotypecaller:
   - modules/gatk4/haplotypecaller/**
