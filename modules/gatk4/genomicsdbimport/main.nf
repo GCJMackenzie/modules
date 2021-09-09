@@ -66,6 +66,6 @@ process GATK4_GENOMICSDBIMPORT {
         ${intervalsCommand} \\
         $options.args
 
-    echo \$(samtools --version 2>&1) | sed 's/^.*samtools //; s/Using.*\$//' > ${software}.version.txt
+    echo \$(gatk --version 2>&1) | sed 's/^.*(GATK) v//; s/ .*\$//' > ${software}.version.txt
     """
 }
